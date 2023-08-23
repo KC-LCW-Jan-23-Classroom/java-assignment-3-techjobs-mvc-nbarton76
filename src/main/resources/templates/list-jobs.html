@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org/">
-<head th:replace="fragments :: head">
-</head>
+<head th:replace="fragments :: head"></head>
 <body>
 
 <div th:replace="fragments :: page-header"></div>
@@ -12,7 +11,15 @@
 
     <!-- TODO #1 - Use a loop to display job results in a table. -->
 
-</div>
+    <!--    In list-jobs.html, create a loop to display each job passed in from the controller.
+    The job data should be presented in tables, with each job in its own table.
+    Be sure to check in ListController to find the variable names available to the template.
+    Adding the CSS class "job-listing" to a table provides some nice styling, courtesy of Carly’s work!
+    Construct a table for each job, with one job field per row.-->
 
+    <div th:replace="fragments :: allJobs"></div>
+
+
+</div>
 </body>
 </html>
